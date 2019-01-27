@@ -1,3 +1,3 @@
 # dotfiles
 
-### just dot ----
+ubuntu i3: ))))
