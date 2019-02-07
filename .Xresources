@@ -1,0 +1,94 @@
+URxvt*scrollBar: false
+URxvt*font: xft:Pragmata Pro:size=12
+!URxvt*font: xft:LessPerfectDOSVGA:size=14
+URxvt.keysym.C-1:    command:\033]710;xft:Pragmata Pro:size=10\007
+URxvt.keysym.C-2:    command:\033]710;xft:Pragmata Pro:size=11\007
+URxvt.keysym.C-3:    command:\033]710;xft:Pragmata Pro:size=12\007
+URxvt.keysym.C-4:    command:\033]710;xft:Pragmata Pro:size=14\007
+URxvt.keysym.C-5:    command:\033]710;xft:Pragmata Pro:size=16\007
+
+URxvt.background:   #000000
+URxvt.foreground:   #d0d0d0
+
+! Black 
+*color0:              #333333
+*color8:              #3D3D3D
+! Red 
+*color1:              #f03669
+*color9:              #c75b79
+! Green 
+*color2:              #b8e346
+*color10:              #c8e37e
+! Yellow 
+*color3:              #ffa402
+*color11:              #ffbe4a
+! Blue 
+*color4:              #2b2bd8
+*color12:              #2b2bd8
+! Magenta 
+*color5:              #875c8d
+*color13:              #e41f66
+! Cyan 
+*color6:              #6fa9d3
+*color14:              #0078CE
+! White 
+*color7:              #899CA1
+*color15:              #C0C0C0
+
+!! seoul light
+!URxvt*background: #d3d3d3
+!URxvt*foreground: #000000
+!URxvt*color0: #000000
+!URxvt*color1: #af5f5f
+!URxvt*color2: #5f885f
+!URxvt*color3: #af8760
+!URxvt*color4: #5f87ae
+!URxvt*color5: #875f87
+!URxvt*color6: #5f8787
+!URxvt*color7: #e4e4e4
+!URxvt*color8: #3a3a3a
+!URxvt*color9: #cc1a19
+!URxvt*color10: #005f00
+!URxvt*color11: #d8865f
+!URxvt*color12: #0033ff
+!URxvt*color13: #87025f
+!URxvt*color14: #008787
+!URxvt*color15: #eeeeee
+
+! hybrid theme
+! special
+!*.foreground:   #d2c5bc
+!*.background:   #010101
+!*.cursorColor:  #d2c5bc
+!
+!! black
+!*.color0:       #202020
+!*.color8:       #606060
+!
+!! red
+!*.color1:       #b91e2e
+!*.color9:       #d14548
+!
+!! green
+!*.color2:       #81957c
+!*.color10:      #a7b79a
+!
+!! yellow
+!*.color3:       #f9bb80
+!*.color11:      #fae3a0
+!
+!! blue
+!*.color4:       #356579
+!*.color12:      #7491a1
+!
+!! magenta
+!*.color5:       #2d2031
+!*.color13:      #87314e
+!
+!! cyan
+!*.color6:       #0b3452
+!*.color14:      #0f829d
+!
+!! white
+!*.color7:       #909090
+!*.color15: #fff0f0
