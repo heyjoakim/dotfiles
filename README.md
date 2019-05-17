@@ -1,4 +1,4 @@
 # dotfiles
 
-My personal dotfiles WHEN i use i3\
+My personal dotfiles for i3\
 .pseudoxinit for dwm
