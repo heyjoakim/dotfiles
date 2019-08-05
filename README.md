@@ -1,3 +1,4 @@
 # dotfiles
 
-ubuntu i3: ))))
+My personal dotfiles for i3\
+.pseudoxinit for dwm
