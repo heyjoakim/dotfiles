@@ -1,4 +1,5 @@
 map <F8> :setlocal spell! spelllang=en_gb<CR>
+filetype plugin indent on
 set number
 set laststatus=2
 set title
