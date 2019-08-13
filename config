@@ -78,8 +78,6 @@ bindsym $mod+d exec dmenu_run
 bindsym $mod+j focus left
 bindsym $mod+k focus down
 bindsym $mod+l focus up
-bindsym $mod+ae focus right
-bindsym $mod+pp focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
