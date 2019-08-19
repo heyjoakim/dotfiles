@@ -200,8 +200,8 @@ bar {
         status_command i3status
 	position top
 	colors  {
-		background #232323
-		statusline #DCDCDC
+		background #232323 dark grey color
+		statusline #DCDCDC white color
 		}
 }
 
