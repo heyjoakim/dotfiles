@@ -142,9 +142,6 @@ alias texcleanup="rm --interactive --verbose *.aux *.log *.out"
 alias cddrop="cd ~/Dropbox"
 alias cddl="cd ~/Downloads"
 
-#QS
-alias ur="python3 ~/Dropbox/logs/ur.py"
-
 #git
 alias gl="git pull"
 alias gp="git push"
