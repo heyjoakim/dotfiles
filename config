@@ -37,9 +37,6 @@ bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 20 # decrease
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-#wallpaper
-#feh --bg-scale --bg-fill /home/hey/Pictures/palmswp.jpg
-
 #compton
 exec --no-startup-id compton
 
@@ -207,4 +204,5 @@ bar {
 		statusline #DCDCDC
 		}
 }
+
 

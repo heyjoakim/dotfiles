@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+let mapleader=","
+
+au Filetype tex nnoremap <leader>pdf :w<CR>:!pdflatex %<CR>
+=======
 map <F8> :setlocal spell! spelllang=en_gb<CR>
 filetype plugin indent on
 set number
@@ -191,3 +196,4 @@ if has('nvim')
 else
   let g:terminal_ansi_colors = ['#303030', '#ffafd7', '#afffd7', '#ffaf87', '#afd7ff', '#ffd7ff', '#d7d7ff', '#808080', '#3f3939', '#ffc8e3', '#c8ffe3', '#ffc0a0', '#c8e3ff', '#fff0ff', '#f0f0ff', '#eeeeee']
 endif
+>>>>>>> f84b3068cffedc76ed572bd6c05f1381c82f0c83
