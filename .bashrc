@@ -122,7 +122,7 @@ fi
 # }}}
 complete -cf sudo
 
-export EDITOR=kak
+export EDITOR=vim
 
 export PATH=$PATH:/home/$USER/bin/
 
@@ -143,6 +143,9 @@ alias weather="curl -s wttr.in | sed -n '1,7p'"
 alias texcleanup="rm --interactive --verbose *.aux *.log *.out"
 alias cddrop="cd ~/Dropbox"
 alias cddl="cd ~/Downloads"
+
+#QS
+alias ur="python3 ~/Dropbox/logs/ur.py"
 
 #git
 alias gl="git pull"
