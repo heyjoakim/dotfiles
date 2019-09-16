@@ -3,6 +3,8 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+#tmux
+alias tmux="tmux -2"
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -44,7 +46,7 @@ esac
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
-force_color_prompt=yes
+#force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
@@ -150,17 +152,26 @@ alias gl="git pull"
 alias gp="git push"
 alias gco="git checkout"
 
+# ku
+alias dmaplan="firefox https://absalon.ku.dk/courses/28115/pages/forelaesnings-og-laeseplan"
+alias popplan="firefox https://absalon.ku.dk/courses/28623/pages/forelaesnings-og-laeseplan" 
+alias cddma="cd ~/Dropbox/diku/dma"
+alias cdpop="cd ~/Dropbox/diku/pop"
+alias cddiku="cd ~/Dropbox/diku"
+alias mitlib="cd ~/Dropbox/diku/mitlib"
+alias kal="firefox https://calendar.google.com/" 
+
 # system
-alias todo="vim ~/Documents/todo"
+alias todo="kak ~/Documents/todo"
+alias batt="cat /sys/class/power_supply/BAT0/status /sys/class/power_supply/BAT0/capacity | tr '\n' ' '; echo '% '"
 alias temp="cat /sys/class/thermal/thermal_zone*/temp"
 alias sd="shutdown -h now"
 alias sr="systemctl reboot"
 alias aptupdate="sudo apt-get update --yes && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y && sudo apt-get autoremove"
 
 # config
-alias confbash="vim ~/git/dotfiler/bashrc"
+alias confbash="kak ~/git/dotfiler/bashrc"
 alias sobash="source ~/.bashrc"
 alias vimrc="vim ~/.vimrc"
 alias confkak="cd ~/git/dotfiler/kak/"
 alias kakrc="kak ~/git/dotfiler/kak/kakrc"
-
