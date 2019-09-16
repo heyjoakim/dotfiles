@@ -1,0 +1,25 @@
+# xsetroot script for dwm
+while true
+do
+	VOL="VOL$(amixer get Master | tail -1 | sed 's/.*\[\([0-9]*%\)\].*/\1/')"
+	LOCALTIME=$(date +%H:%M\ %a\ %b\ %d\ %Y)
+	# IP=$(for i in `ip r`; do echo $i; done | grep -A 1 src | tail -n1) # can get confused if you use vmware
+	TEMP="CPU$(($(cat /sys/class/thermal/thermal_zone0/temp) / 1000))C"
+
+	if dropbox status | grep -i syncing > /dev/null
+        then
+                DROPBOX=" $(dropbox status | head -1)"
+        else
+                DROPBOX=""
+        fi
+
+	if acpi -a | grep off-line > /dev/null
+	then
+		BAT="BAT$(acpi -b | awk '{print $4 " " substr($5, 1, 2)}' | tr -d ',')h"
+		xsetroot -name "$DROPBOX $BAT  $VOL  $TEMP  $LOCALTIME"
+	else
+		BAT="BAT$(acpi -b | awk '{print $4}' | tr -d ',')"
+		xsetroot -name "$DROPBOX $BAT  $VOL  $TEMP  $LOCALTIME"
+	fi
+	sleep 1s
+done &

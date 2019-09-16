@@ -1,0 +1,8 @@
+#!/bin/bash
+function downbar {
+        amixer -D pulse sset Master 10%-
+        . /home/$USER/bin/setbar
+}
+
+downbar
+setbar
