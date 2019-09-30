@@ -1,90 +1,46 @@
-" Set compatibility to Vim only.
-set nocompatible
-
-" Helps force plug-ins to load correctly when it is turned back on below.
-filetype off
-
-" Turn on syntax highlighting.
 syntax on
-colo ron
+colorscheme atom-dark-256
 
-" For plug-ins to load correctly.
-filetype plugin indent on
 
-" Turn off modelines
-set modelines=0
-
-" Automatically wrap text that extends beyond the screen length.
-set wrap
-" Vim's auto indentation feature does not work properly with text copied from outisde of Vim. Press the <F2> key to toggle paste mode on/off.
-nnoremap <F2> :set invpaste paste?<CR>
-imap <F2> <C-O>:set invpaste paste?<CR>
-set pastetoggle=<F2>
-
-" Uncomment below to set the max textwidth. Use a value corresponding to the width of your screen.
-" set textwidth=79
-set formatoptions=tcqrn1
 set tabstop=2
 set shiftwidth=2
-set softtabstop=2
+set ruler
+set hlsearch
 set expandtab
-set noshiftround
+set number
+filetype indent on
+set autoindent
+set shell=/bin/bash
+set nocompatible
+filetype off
+map ; :Files<CR> 
+map <C-o> :NERDTreeToggle<CR>
+map <C-l> :tabn<CR>
+map <C-h> :tabp<CR>
+map <C-n> :tabnew<CR>
 
-" Display 5 lines above/below the cursor when scrolling with a mouse.
-set scrolloff=5
-" Fixes common backspace problems
-set backspace=indent,eol,start
+set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
 
-" Speed up scrolling in Vim
-set ttyfast
-
-" Status bar
+" Always show statusline
 set laststatus=2
 
-" Display options
-set showmode
-set showcmd
+" Use 256 colours (Use this setting only if your terminal supports 256 colours)
+set t_Co=256
 
-" Highlight matching pairs of brackets. Use the '%' character to jump between them.
-set matchpairs+=<:>
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
 
-" Display different types of white spaces.
-set list
-set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
+" Add vundle plugins here "
+Plugin 'powerline/powerline'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'tpope/vim-fugitive'
+Plugin 'junegunn/fzf.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'mattn/emmet-vim'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/syntastic'
 
-" Show line numbers
-set number
-
-" Set status line display
-set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ [BUFFER=%n]\ %{strftime('%c')}
-
-" Encoding
-set encoding=utf-8
-
-" Highlight matching search patterns
-set hlsearch
-" Enable incremental search
-set incsearch
-" Include matching uppercase words with lowercase search term
-set ignorecase
-" Include only uppercase words with uppercase search term
-set smartcase
-
-" Store info from no more than 100 files at a time, 9999 lines of text, 100kb of data. Useful for copying large amounts of data between files.
-set viminfo='100,<9999,s100
-
-"vimrc colors to tmux
-" use 256 colors in terminal
-if !has("gui_running")
-    set t_Co=256
-    set term=screen-256color
-endif
-
-" fix cursor display in cygwin
-if has("win32unix")
-    let &t_ti.="\e[1 q"
-    let &t_SI.="\e[5 q"
-    let &t_EI.="\e[1 q"
-    let &t_te.="\e[0 q"
-endif
-
+call vundle#end()
+filetype plugin indent on

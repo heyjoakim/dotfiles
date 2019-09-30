@@ -1,3 +1,4 @@
+! Start
 URxvt*scrollBar: false
 URxvt*font: xft:Pragmata Pro:size=12
 !URxvt*font: xft:LessPerfectDOSVGA:size=14

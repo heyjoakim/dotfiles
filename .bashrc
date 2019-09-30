@@ -161,6 +161,9 @@ alias cddiku="cd ~/Dropbox/diku"
 alias mitlib="cd ~/Dropbox/diku/mitlib"
 alias kal="firefox https://calendar.google.com/" 
 
+# tmux
+alias tmuxkill="tmux tmuxkill-server"
+
 # system
 alias todo="kak ~/Documents/todo"
 alias batt="cat /sys/class/power_supply/BAT0/status /sys/class/power_supply/BAT0/capacity | tr '\n' ' '; echo '% '"
