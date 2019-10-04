@@ -7,7 +7,6 @@ syntax enable
 set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
-Plugin 'jiangmiao/auto-pairs'
 Plugin 'tpope/vim-fugitive'
 Plugin 'junegunn/fzf.vim'
 Plugin 'scrooloose/nerdtree'
@@ -47,6 +46,9 @@ set autoindent
 set shell=/bin/bash
 set background=dark
 
+" Maps
+imap jj <Esc>
+
 " Nerd tree
 map <C-o> :NERDTreeToggle<CR>
 map <C-l> :tabn<CR>
@@ -54,7 +56,7 @@ map <C-h> :tabp<CR>
 map <C-n> :tabnew<CR>
 
 " Airline
-"let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 1
 let g:airline_theme='sol'
 set t_Co=256
 set noshowmode " Get rid of the default indicator
