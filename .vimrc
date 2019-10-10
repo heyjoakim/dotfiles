@@ -30,7 +30,7 @@ Plugin 'dracula/vim'
 call vundle#end()
 
 " Schemes
-colorscheme wombat
+colorscheme peachpuff
 
 
 " Happy hacking
@@ -75,3 +75,4 @@ set t_Co=256
 
 " Reload files
 set autoread
+
