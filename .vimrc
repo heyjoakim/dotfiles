@@ -27,14 +27,19 @@ Plugin 'sjl/badwolf'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'hukl/Smyck-Color-Scheme'
 Plugin 'dracula/vim'
+Plugin 'python-mode/python-mode'
+Bundle 'OmniSharp/omnisharp-vim'
 call vundle#end()
 
 " Schemes
 colorscheme peachpuff
 
+" #C
+let g:OmniSharp_highlight_types = 2
 
-" Happy hacking
-set t_ut=
+" Python3
+let g:pymode_python = 'python3'
+autocmd BufRead *.py setlocal colorcolumn=0
 
 " set tabstop=2
 set shiftwidth=2
