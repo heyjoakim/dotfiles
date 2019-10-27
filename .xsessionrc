@@ -1,0 +1,8 @@
+#!/bin/bash
+
+feh --bg-fill ~/Pictures/2.jpg
+xrandr --dpi 125
+xrdb -merge ~/.Xresources
+setxkbmap -layout dk -variant nodeadkeys -option ctrl:nocaps
+wmname LG3D
+~/bin/dwmbar &
