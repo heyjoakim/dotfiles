@@ -3,27 +3,23 @@ filetype off
 filetype plugin indent on
 syntax enable
 
-" Vundle Plugins
+"Vundle plugins
 set rtp+=~/.vim/bundle/Vundle.vim
-
 call vundle#begin()
+
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-fugitive'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'scrooloose/syntastic'
 Plugin 'flazz/vim-colorschemes'
-Plugin 'hukl/Smyck-Color-Scheme'
-Plugin 'python-mode/python-mode'
-Bundle 'OmniSharp/omnisharp-vim'
+Plugin 'tpope/vim-surround'
 call vundle#end()
 
-" " Schemes
 colorscheme peachpuff
 
 " #C
- let g:OmniSharp_highlight_types = 2
+let g:OmniSharp_highlight_types = 2
 
 " Python3
 let g:pymode_python = 'python3'
@@ -39,19 +35,16 @@ set autoindent
 set shell=/bin/bash
 set background=dark
 
-" " Maps
+" Maps
 imap jj <Esc>
 
-" " Nerd tree
+" Nerd tree
 map <C-o> :NERDTreeToggle<CR>
 map <C-l> :tabn<CR>
 map <C-h> :tabp<CR>
 map <C-n> :tabnew<CR>
 
-" " Fixes
-set timeoutlen=1000 ttimeoutlen=0 "" escape fix
-
-" " Airline
+" Airline
 let g:airline_powerline_fonts = 1
 let g:airline_theme='sol'
 set t_Co=256
@@ -66,9 +59,9 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 " Always show statusline
 set laststatus=2
 
-" Use 256 colours (Use this setting only if your terminal supports 256
-" colours)
+" Use 256 colours (Use this setting only if your terminal supports 256 colours)
 set t_Co=256
 
 " Reload files
 set autoread
+
