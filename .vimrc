@@ -30,7 +30,7 @@ set shiftwidth=2
 set ruler
 set hlsearch
 set expandtab
-set number
+set relativenumber
 set autoindent
 set shell=/bin/bash
 set background=dark
