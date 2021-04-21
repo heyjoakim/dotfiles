@@ -5,7 +5,7 @@ syntax enable
 map <F8> :setlocal spell! spelllang=en_gb<CR>
 
 " An undo history
-set undofile
+"set undofile
 
 " Control-Backspace to remove last word
 inoremap <C-H> <C-W>

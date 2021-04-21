@@ -3,6 +3,10 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+#if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+#x    tmux attach -t default || tmux new -s default
+#fi
+
 #tmux
 alias tmux="tmux -2"
 # If not running interactively, don't do anything
@@ -10,6 +14,8 @@ case $- in
     *i*) ;;
       *) return;;
 esac
+
+
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -194,6 +200,7 @@ alias aptupdate="sudo apt-get update --yes && sudo apt-get upgrade -y && sudo ap
 #desktop
 alias dell="xrandr --output HDMI-2 --scale 1.25x125"
 alias laptop="xrandr --output eDP-1 --scale 1x1"
+alias sd="shutdown -P"
 
 # config
 alias confbash="kak ~/git/dotfiler/bashrc"
@@ -201,3 +208,7 @@ alias sobash="source ~/.bashrc"
 alias vimrc="vim ~/.vimrc"
 alias confkak="cd ~/git/dotfiler/kak/"
 alias kakrc="kak ~/git/dotfiler/kak/kakrc"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
