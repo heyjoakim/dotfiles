@@ -1,0 +1,60 @@
+scrolling:
+  # Maximum number of lines in the scrollback buffer.
+  # Specifying '0' will disable scrolling.
+  history: 10000
+
+# Font configuration (changes require restart)
+font:
+  # Normal (roman) font face
+  normal:
+    # Font family
+    #
+    # Default:
+    #   - (macOS) Menlo
+    #   - (Linux) monospace
+    #   - (Windows) Consolas
+    family: monospace
+
+  # Point size
+  size: 16
+  use_thin_strokes: true
+
+# If `true`, bold text is drawn using the bright color variants.
+draw_bold_text_with_bright_colors: false
+
+# Colors (Tomorrow Night Bright)
+colors:
+  # Default colors
+  primary:
+    # background: '0x000000'
+    # foreground: '0xd0d0d0'
+    foreground: '0xd0d0d0'
+  # Normal colors
+  normal:
+    black:   '0x333333'
+    red:     '0xf03669'
+    green:   '0xb8e346'
+    yellow:  '0xffa402'
+    blue:    '0x365eff'
+    magenta: '0x875c8d'
+    cyan:    '0x6fa9d3'
+    white:   '0xDBDBDB'
+
+  # Bright colors
+  bright:
+    black:   '0x3d3d3d'
+    red:     '0xc75b79'
+    green:   '0xc8e37e'
+    yellow:  '0xffbe4a'
+    blue:    '0x365eff'
+    magenta: '0xe41f66'
+    cyan:    '0x0078CE'
+    white:   '0xC0C0C0'
+ 
+ # Cursor style
+cursor:
+  # Values for `style`:
+  #   - ▇ Block
+  #   - _ Underline
+  #   - | Beam
+  style: Block
