@@ -189,6 +189,9 @@ alias kal="firefox https://calendar.google.com/"
 # tmux
 alias t="tmux"
 
+# pdf
+alias pdf='xdg-open'
+
 # system
 alias todo="kak ~/Documents/todo"
 alias batt="cat /sys/class/power_supply/BAT0/status /sys/class/power_supply/BAT0/capacity | tr '\n' ' '; echo '% '"
