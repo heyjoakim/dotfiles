@@ -193,9 +193,6 @@ alias t="tmux"
 alias pdf='xdg-open'
 
 # system
-alias todo="kak ~/Documents/todo"
-alias batt="cat /sys/class/power_supply/BAT0/status /sys/class/power_supply/BAT0/capacity | tr '\n' ' '; echo '% '"
-alias temp="cat /sys/class/thermal/thermal_zone*/temp"
 alias sd="shutdown -h now"
 alias sr="systemctl reboot"
 alias aptupdate="sudo apt-get update --yes && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y && sudo apt-get autoremove"
@@ -206,11 +203,8 @@ alias laptop="xrandr --output eDP-1 --scale 1x1"
 alias sd="shutdown -P"
 
 # config
-alias confbash="kak ~/git/dotfiler/bashrc"
 alias sobash="source ~/.bashrc"
 alias vimrc="vim ~/.vimrc"
-alias confkak="cd ~/git/dotfiler/kak/"
-alias kakrc="kak ~/git/dotfiler/kak/kakrc"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
