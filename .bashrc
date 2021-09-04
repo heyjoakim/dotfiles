@@ -174,15 +174,6 @@ alias gl="git pull"
 alias gp="git push"
 alias gco="git checkout"
 
-# ku
-alias dmaplan="firefox https://absalon.ku.dk/courses/28115/pages/forelaesnings-og-laeseplan"
-alias popplan="firefox https://absalon.ku.dk/courses/28623/pages/forelaesnings-og-laeseplan" 
-alias cddma="cd ~/Dropbox/diku/dma"
-alias cdpop="cd ~/Dropbox/diku/pop"
-alias cddiku="cd ~/Dropbox/diku"
-alias mitlib="cd ~/Dropbox/diku/mitlib"
-alias kal="firefox https://calendar.google.com/" 
-
 # tmux
 alias t="tmux"
 
@@ -197,7 +188,6 @@ alias aptupdate="sudo apt-get update --yes && sudo apt-get upgrade -y && sudo ap
 #desktop
 alias dell="xrandr --output HDMI-2 --scale 1.25x125"
 alias laptop="xrandr --output eDP-1 --scale 1x1"
-alias sd="shutdown -P"
 
 # config
 alias sobash="source ~/.bashrc"
