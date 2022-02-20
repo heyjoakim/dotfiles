@@ -21,9 +21,7 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'rakr/vim-two-firewatch'
-Plugin 'tpope/vim-commentary'
-Plugin 'arzg/vim-colors-xcode'
-call vundle#end()
+Plugin 'tpope/vim-commentary'call vundle#end()
 
 colorscheme peachpuff
 "set termguicolors
