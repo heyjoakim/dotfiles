@@ -19,8 +19,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'rakr/vim-two-firewatch'
+Plugin 'vim-airline/vim-airline-theme'
 Plugin 'tpope/vim-commentary'call vundle#end()
 
 colorscheme peachpuff
